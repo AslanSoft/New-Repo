@@ -489,8 +489,8 @@
 }
 
 .stand__contents>.people{
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
 }
 
 .stand__contents>.stand__content{
@@ -507,6 +507,13 @@
   font-size: 18px;
   color: #6E38F7;
 }
+
+.buttonbox>.get{
+
+  color: #fff;
+  background: #6E38F7;
+}
+
 
 
 
