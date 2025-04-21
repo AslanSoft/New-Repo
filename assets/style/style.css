@@ -1,0 +1,512 @@
+/* rubik-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/rubik-v28-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* rubik-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rubik-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* rubik-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/rubik-v28-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* rubik-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/rubik-v28-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* rubik-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/rubik-v28-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* rubik-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/rubik-v28-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* rubik-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/rubik-v28-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: "Rubik" , sans-serif;
+  }
+
+  .container{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  li,a{
+    text-decoration: none;
+    list-style: none;
+  }
+
+  button, select, input{
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  .header__container{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__navbox{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .header__buttonbox{
+    display: flex;
+    gap: 30px;
+  }
+
+  .header__buttonbox-shop{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .fa-basket-shopping{
+    color: #6E38F7;
+  }
+
+  .header__buttonbox-search{
+    color: gray;
+    font-size: 20px;
+  }
+
+  .header__navbox-item{
+    position: relative;
+  }
+
+  .header__navbox-item-link::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .header__navbox-item-link:hover::after{
+    width: 100%;
+  }
+
+  .main{
+    margin-top: 156px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .trends__textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trend{
+    font-family: "Rubik" , sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #95A1BB;
+  }
+
+  .optimism{
+    max-width: 580px;
+    width: 100%;
+    text-align: center;
+    font-family: "Rubik" , sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0px;
+    word-wrap: break-word;
+    line-height: 1.5;
+  }
+
+  .main__buttonbox{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .main__imgbox{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .learn{
+    padding: 12px 40px;
+    background: #6E38F7;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  .demo{
+    padding: 12px 40px;
+    border-radius: 5px;
+    border: 1px solid #6E38F7;
+    color: #6E38F7;
+  }
+
+  .choice{
+    margin-top: 100px;
+  }
+
+  .choice__textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .your{
+    max-width: 580px;
+    width: 100%;
+    text-align: center;
+    font-family: "Rubik" , sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .info{
+    font-family: "Rubik" , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #95A1BB;
+  }
+
+  .choice__contentbox{
+    display: flex;
+    justify-content: space-between;
+    row-gap: 40px;
+    column-gap: 100px;
+    flex-wrap: wrap;
+  }
+  .choice__contentbox>.content{
+    width: 320px;
+    display: flex;
+    gap: 28px;
+  }
+
+  .choice__contentbox>.content>.content__right{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  .choice__contentbox>.content>.content__right>.users{
+    font-size: 14px;
+    color: #95A1BB;
+  }
+  .choice__container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px ;
+  }
+
+  .container__pathbox{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .path__content{
+    display: flex;
+    gap: 28px;
+  }
+  .path__content:first-child{
+    
+  }
+  .choice_pathbox>.content__right{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .path__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .path__ota{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .title{
+    margin-top: 100px;
+  }
+
+  .test{
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-family: "Rubik" , sans-serif;
+    line-height: 43px;
+    letter-spacing: 0px;
+  }
+  .testimonials__box{
+    display: flex ;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .textbox__case{
+    width: 300px;
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textbox__top{
+    font-weight: 400px;
+    font-family: "Rubik" , sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .textbox__left{
+    margin-top: 31px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Rubik" , sans-serif;
+    line-height: 22px;
+    color: #363940;
+  }
+
+  .textbox__bottom{
+    font-weight: 500;
+    font-family: "Rubik" , sans-serif;
+    font-size: px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #95A1BB;
+    text-align: start;
+  }
+  .textbox__bottom>b{
+    font-size: 18px;
+    color: #000;
+  }
+  .textbox__bottom>p{
+    font-size: 14px;
+  }
+
+.circle__box{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.circle{
+  width: 10px;
+  height: 10px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+}
+.active{
+ background: #6E38F7;
+ border: none; 
+}
+.title__container{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.navbar__content{
+  width: 220px;
+  height: 398px;
+  border: 1px solid ;
+  border-color: #E1E5EE;
+}
+/* trafic container */
+.trafic__container{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+/* trafic top textbox */
+
+.trafic__top{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.trafic__top>h3{
+  font-size: 36px;
+}
+.trafic__top>p{
+  font-size: 16px;
+  color: #95A1BB;
+}
+.trafic__columns{
+  display: flex;
+  justify-content: space-between;
+}
+.traffic__column{
+  width: 320px;
+  border: 1px solid #E1E5EE;
+  padding: 30px;
+  text-align: start;
+  border-radius: 4px;
+}
+
+.trafic__item{
+  margin-top: 10px;
+  display: flex;
+  gap: 7px;
+}
+.trafic__item>p{
+  color: #95A1BB;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.trafic__column-top{
+  height: 80px;
+  position: relative;
+}
+.trafic__column-top::after{
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  height: 1px;
+  background: #E1E5EE;
+}
+
+.standart{
+  font-family: "Rubik" , sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.free{
+  margin-top: 10px;
+  font-family: "Rubik" , sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #95A1BB;
+}
+
+.buttonbox{
+  display: flex;
+  margin-top: 20px;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 10px 80px;
+  color: #6E38F7;
+}
+
+.stand__content{
+  font-family: "Rubik" , sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #363940;
+}
+
+.free__content{
+  margin-top: 10px;
+  font-family: "Rubik" , sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #95A1BB;
+}
+
+.stand__contents{
+  display: flex;
+  justify-content: space-between;
+}
+
+.stand__contents>.people{
+  width: 32px;
+  height: 32px;
+}
+
+.stand__contents>.stand__content{
+  font-family: "Rubik" , sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #363940;
+}
+
+.sollary{
+  margin-top: 10px;
+  font-family: "Rubik" , sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #6E38F7;
+}
+
+
+
+
+
+
