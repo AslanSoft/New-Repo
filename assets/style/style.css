@@ -508,15 +508,48 @@
   color: #6E38F7;
 }
 
-.buttonbox>.get{
-
+.buttonbox-active{
+  display: flex;
+  margin-top: 20px;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 10px 80px;
   color: #fff;
   background: #6E38F7;
 }
 
+.light__section{
+  margin-top: 100px;
+}
 
+.light__content{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.light__container__right{
+  display: flex;
+  flex-direction: column;
+}
 
+.why{
+  max-width: 291px;
+    font-family: "Rubik" , sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0px;
+    word-wrap: break-word;
+}
 
-
-
+.reasons{
+  margin-top: 10px;
+  max-width: 291px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #95A1BB;
+}
