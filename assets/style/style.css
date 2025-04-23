@@ -689,3 +689,37 @@
   justify-content: center;
   gap: 100px;
 }
+
+.prod{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #363940;
+}
+
+.end__link{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nevskaya{
+  max-width: 220px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #95A1BB;
+}
+
+
+.copyright{
+  max-width: 220px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #95A1BB;
+}
